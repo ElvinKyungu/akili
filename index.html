@@ -28,7 +28,16 @@
       margin-top: -8rem;
     }
     .slide-item{
-      border-radius: none;
+      border-radius: unset;
+    }
+    .home-slider .text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .home-slider{
+      border-radius: unset;
     }
   </style>
   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
@@ -190,10 +199,12 @@
             <span class="count">0</span>
           </button>
 
-          <button class="action-btn">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
+          <a href="panier.html">
+            <button class="action-btn">
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+          </a>
 
         </div>
 
@@ -445,15 +456,15 @@
     <!--
       - BANNER
     -->
-    <div class="home-slider owl-carousel js-fullheight">
+    <div class="home-slider relative owl-carousel js-fullheight">
       <div class="slider-item js-fullheight" style="background-image:url(assets/images/image-4.jpg);">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
 	          <div class="col-md-12 ftco-animate">
-	          	<div class="text w-100 text-center">
-	          		<h2>Best Place to Travel</h2>
-		            <h1 class="mb-3">Norway</h1>
+	          	<div class="text  text-center">
+	          		<h2>Faites le plein de bonheurs à</h2>
+		            <h1 class="">Kinshasa</h1>
 	            </div>
 	          </div>
 	        </div>
@@ -465,100 +476,15 @@
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
 	          <div class="col-md-12 ftco-animate">
-	          	<div class="text w-100 text-center">
-	          		<h2>Best Place to Travel</h2>
-		            <h1 class="mb-3">Japan</h1>
+	          	<div class="text  text-center">
+	          		<h2>Reduction sur mesure</h2>
+		            <h1 class="">+bonus</h1>
 	            </div>
 	          </div>
 	        </div>
         </div>
       </div>
     </div>
-    <section class="ftco-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h2 class="heading-section ">Produits</h2>
-					</div>
-					<div class="col-md-12">
-						<div class="featured-carousel owl-carousel">
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets/images/products/lunette8.jpeg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 01</a></h3>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets/images/products/lunette8.jpeg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 02</a></h3>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets/images/products/lunette8.jpeg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 03</a></h3>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets/images/products/lunette10.jpeg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 04</a></h3>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets/images/products/lunette11.jpeg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 05</a></h3>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(assets/images/products/lunette3.jpeg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 06</a></h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
     <div class="product-container">
 
       <div class="container">
@@ -1655,7 +1581,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer__about">
                     <div class="footer__about__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="assets/images/logo-removebg-preview.png" alt=""></a>
                     </div>
                     <ul>
                         <li>Addresse: 60-49 Gombe Kinshasa</li>
