@@ -2392,7 +2392,9 @@ ul.about, ul.icon-profile{
             border-top-right-radius: var(--border-radius-md);
   }
 
-
+  .text-slider .text{
+    margin-left: -5rem;
+  }
 
   /**
    * #BANNER
@@ -2474,7 +2476,9 @@ ul.about, ul.icon-profile{
  */
 
 @media (min-width: 570px) {
-
+  .text-slider .text{
+    margin-left: 0rem;
+  }
   /**
    * #HEADER
    */
