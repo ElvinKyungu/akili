@@ -43,6 +43,42 @@
     .h-100{
       height: 100vh;
     }
+    .container-slide-effect{
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      overflow-x: scroll;
+      text-align: center;
+      overflow-y: hidden;
+      margin-bottom: 3rem;
+      width: 1024px;
+    }
+    .container-slide-effect::-webkit-scrollbar {
+    display: none;
+}
+
+    .block-container{
+      padding: .5rem;
+      background-color: #dad8d8;
+      color: #222;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+    .block-container span{
+      display: block;
+      padding: 0 1rem;
+      font-size: 35px;
+      color: purple;
+    }
+    .block-container p{
+      margin: -.5rem 0;
+      text-align: left;
+    }
   </style>
   <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
@@ -456,6 +492,38 @@
         </div>
       </div>
     </div>
+    <div class="container container-slide-effect">
+      <div class="block-container">
+        <span><ion-icon name="glasses-outline"></ion-icon></span>
+        <div class="d-block">
+          <p>Free 100 day</p>
+          <p>Return Garantee</p>
+        </div>
+      </div>
+      <div class="block-container">
+        <span><ion-icon name="glasses-outline"></ion-icon></span>
+        <div class="d-block">
+          <p>Free 100 day</p>
+          <p>Return Garantee</p>
+        </div>
+      </div>
+      <div class="block-container">
+        <span><ion-icon name="glasses-outline"></ion-icon></span>
+        <div class="">
+          <p>Free 100 day</p>
+          <p>Return Garantee</p>
+        </div>
+      </div>
+      <div class="block-container">
+        <span><ion-icon name="glasses-outline"></ion-icon></span>
+        <div class="d-block">
+          <p>Free 100 day</p>
+          <p>Return Garantee</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <div class="product-container">
 
       <div class="container">
@@ -780,7 +848,7 @@
 
             <div class="showcase-wrapper">
 
-              <div class="showcase-container">
+              <div class="showcase-container d-block">
 
                 <div class="showcase">
 
@@ -1350,6 +1418,9 @@
             </div>
 
           </div>
+          <div class="banner">
+            <img src="assets/images/banner.jpeg" width="100%" alt="" srcset="">
+          </div>
           <div class="product-minimal">
 
             <div class="product-showcase">
@@ -1358,7 +1429,7 @@
 
               <div class="showcase-wrapper has-scrollbar">
 
-                <div class="showcase-container">
+                <div class="showcase-container d-block">
 
                   <div class="showcase">
 
@@ -1418,7 +1489,7 @@
             
               <div class="showcase-wrapper  has-scrollbar">
             
-                <div class="showcase-container">
+                <div class="showcase-container d-block">
             
                   <div class="showcase">
             
@@ -1479,7 +1550,7 @@
             
               <div class="showcase-wrapper  has-scrollbar">
             
-                <div class="showcase-container">
+                <div class="showcase-container d-block">
             
                   <div class="showcase">
             
@@ -1584,8 +1655,7 @@
 
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>

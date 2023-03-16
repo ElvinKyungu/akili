@@ -1228,7 +1228,9 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
       -ms-scroll-snap-type: inline mandatory;
           scroll-snap-type: inline mandatory;
 }
-
+.showcase-container{
+  display: flex !important;
+}
 .product-minimal .showcase-container {
   min-width: 100%;
   padding: 0 5px;
@@ -3213,7 +3215,7 @@ ul.about, ul.icon-profile{
 
   .product-featured .countdown-content { padding: 5px 10px; }
 
-  .product-grid { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); }
+  
 
 
 
