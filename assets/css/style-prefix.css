@@ -514,7 +514,6 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #HEADER
 \*-----------------------------------*/
 
-.header-top,
 .header-user-actions,
 .desktop-navigation-menu { display: none; }
 
@@ -2340,6 +2339,15 @@ ul.about, ul.icon-profile{
   .mieux-note{
     display: none;
   }
+  .close-coupon{
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    transform: translate(-50%);
+    right: 1rem;
+    
+  }
+
 }
 /**
  * responsive larger than 480px screen

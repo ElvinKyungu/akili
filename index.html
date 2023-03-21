@@ -100,6 +100,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/carousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/carousel/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--
     - google font link
   -->
@@ -123,22 +124,17 @@
 
   <header>
 
-    <div class="header-top">
+    <div class="header-top" style="display: flex; position: relative; background-color: #000; padding-top: 1.5rem;">
 
       <div class="container">
-
-      
-
-        <div class="header-alert-news">
-          <p class="text-center ">
+        <div class="header-alert-news flex">
+          <p class="text-center" style="color: #fff;">
             Profitez -15% EXTRA* sur les pièces de mi saison déjà jusqu'à -50% avec le code doux
           </p>
           <button class="close-coupon">
             <ion-icon name="close-outline"></ion-icon>
           </button>
         </div>
-        </div>
-
       </div>
 
     </div><br>
@@ -457,8 +453,9 @@
         </div>
       </div>
     </div><br>
-    <div class="container container-slide-effect" style="margin-bottom: -1rem;">
-      <div class="block-container">
+    <div class="container container-slide-effect" style="margin-bottom: -1rem;"  data-aos="fade-up"
+    data-aos-duration="3000">
+      <div class="block-container ">
         <span><ion-icon name="glasses-outline"></ion-icon></span>
         <div class="d-block">
           <p>Free 10</p>
@@ -1111,13 +1108,13 @@
             </div>
 
           </div>
-          <div class="product-featured">
+          <div class="product-featured" >
 
             <h2 class="title">L'affaire du jour</h2>
 
             <div class="showcase-wrapper has-scrollbar">
 
-              <div class="showcase-container">
+              <div class="showcase-container" >
 
                 <div class="showcase">
                   
@@ -1125,7 +1122,7 @@
                     <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
                   </div>
 
-                  <div class="showcase-content">
+                  <div class="showcase-content" style="width: 70%;">
                     
                     <div class="showcase-rating">
                       <ion-icon name="star"></ion-icon>
@@ -1650,6 +1647,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tout 
   <script src="js/carousel/owl.carousel.min.js"></script>
   <script src="js/carousel/main.js"></script>
   <script src="js/slide.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 
