@@ -221,7 +221,41 @@ display: none;
   -webkit-border-radius: 20px;
           border-radius: 20px;
 }
+.bottom_slide_banner{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  overflow-x: scroll;
+  position: relative;
 
+}
+.bottom_slide_banner .block_slide{
+  display: flex;
+  width: 15rem;
+  border-radius: .4rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 1s ease-in-out;
+}
+.bottom_slide_banner .block_slide:hover{
+  border: 1px solid #cb1a1a;
+}
+.contact__widget{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.bottom_slide_banner::-webkit-scrollbar {
+  height: 12px; /* for horizontal scroll */
+}
+.bottom_slide_banner::-webkit-scrollbar-thumb {
+  background: #c6c4c4;
+  border: 3px solid #f0f0f0;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
 .has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
 
 .has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }

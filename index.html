@@ -35,42 +35,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 <style>
-.bottom_slide_banner{
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-  overflow-x: scroll;
-  position: relative;
 
-}
-.bottom_slide_banner .block_slide{
-  display: flex;
-  width: 15rem;
-  background-color: #f1efef;
-  border-radius: .4rem;
-  cursor: pointer;
-  border: 1px solid transparent;
-  transition: 1s ease-in-out;
-}
-.bottom_slide_banner .block_slide:hover{
-  border: 1px solid #cb1a1a;
-}
-.contact__widget{
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .5rem;
-}
-.bottom_slide_banner::-webkit-scrollbar {
-  height: 12px; /* for horizontal scroll */
-}
-.bottom_slide_banner::-webkit-scrollbar-thumb {
-  background: #c6c4c4;
-  border: 3px solid #f0f0f0;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-}
 </style>
 </head>
 
@@ -204,13 +169,13 @@
     <!--
       - BANNER
     -->
-    <div class="home-slider relative owl-carousel js-fullheight h-100" >
-      <div class="slider-item js-fullheight"  style="background-image:url(assets/images/image-4.jpg); border-radius: 0%; ">
+    <div class="home-slider relative owl-carousel js-fullheight" style="position: relative;" >
+      <div class="slider-item "  style="background-image:url(assets/images/image-4.jpg);background-size: cover; background-position: center; border-radius: 0%; height: 100vh; position: absolute; ">
       	<div class="overlay"></div>
-        <div class="container">
+        <div class="container"  style="margin-bottom: -10rem;">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
 	          <div class="col-md-12 text-slider ftco-animate">
-	          	<div class="text  text-center">
+	          	<div class="text  text-center" >
 	          		<h2>Faites le plein de bonheurs à</h2>
 		            <h1 class="">Kinshasa</h1>
 	            </div>
@@ -224,7 +189,7 @@
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
 	          <div class="col-md-12 text-slider">
-	          	<div class="text  text-center">
+	          	<div class="text  text-center"  >
 	          		<h2>Reduction sur mesure</h2>
 		            <h1 class="">+bonus</h1>
 	            </div>
@@ -236,22 +201,22 @@
     
   </div>
 </div>
-<section class="contact spad">
+<section class="contact spad" style="margin-top: -10rem;">
   <div class="container">
-      <div class=" bottom_slide_banner">
+      <div class=" bottom_slide_banner" >
           <div class=" block_slide">
               <div class="contact__widget"><br>
-                  <span class="icon_phone" style="color: #cb1a1a;"></span>
-                  <div>
+                  <span class="icon_lock" style="color: #cb1a1a;"></span>
+                  <div style="margin-bottom: -.5rem;">
                     <span style="color: #000; font-size: 20px;">Livraison</span>
-                      <p  style="color: #616161; font-size: 14px;">Kinshasa livraison gratuite sur toutes les commandes de plus de 100$ en 24</p>
+                      <p  style="color: #616161; font-size: 14px;">Kinshasa livraison gratuite sur toutes les commandes de plus de 100$ en 24h</p>
                   </div>
               </div>
           </div>
           <div class=" block_slide">
             <div class="contact__widget"><br>
-                <span class="icon_phone" style="color: #cb1a1a;"></span>
-                <div>
+                <span class="icon_person" style="color: #cb1a1a;">  <ion-icon name="albums"></ion-icon></span>
+                <div style="margin-bottom: -2rem;">
                   <span style="color: #000; font-size: 20px;">Garantie</span>
                     <p  style="color: #616161; font-size: 14px;">Garantie de 7 jours sur les appareils High-Tech</p>
                 </div>
@@ -260,7 +225,7 @@
         <div class=" block_slide">
           <div class="contact__widget"><br>
               <span class="icon_phone" style="color: #cb1a1a;"></span>
-              <div>
+              <div style="margin-bottom: -2rem;">
                 <span style="color: #000; font-size: 20px;">Support en ligne</span>
                   <p  style="color: #616161; font-size: 14px;">Du Lundi au samedi,<br> 9h-16h30 <br> +243 895 463 426</p>
               </div>
@@ -268,9 +233,9 @@
       </div>
       <div class=" block_slide">
         <div class="contact__widget"><br>
-            <span class="icon_phone" style="color: #cb1a1a;"></span>
-            <div>
-              <span style="color: #000; font-size: 20px;">Paiement securié</span>
+            <span class="icon_lock" style="color: #cb1a1a;"></span>
+            <div style="margin-bottom: -2rem;">
+              <span style="color: #000; font-size: 20px;">Paiement securisé</span>
                 <p style="color: #616161; font-size: 14px;">Visa, Mastercard, Airtel Money, M-pesa, Orange Money</p>
             </div>
         </div>
