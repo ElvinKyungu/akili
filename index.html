@@ -35,7 +35,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 <style>
+.bottom_slide_banner{
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  overflow-x: scroll;
+  position: relative;
 
+}
+.bottom_slide_banner .block_slide{
+  display: flex;
+  width: 15rem;
+  background-color: #f1efef;
+  border-radius: .4rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 1s ease-in-out;
+}
+.bottom_slide_banner .block_slide:hover{
+  border: 1px solid #cb1a1a;
+}
+.contact__widget{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.bottom_slide_banner::-webkit-scrollbar {
+  height: 12px; /* for horizontal scroll */
+}
+.bottom_slide_banner::-webkit-scrollbar-thumb {
+  background: #c6c4c4;
+  border: 3px solid #f0f0f0;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+}
 </style>
 </head>
 
@@ -169,8 +204,8 @@
     <!--
       - BANNER
     -->
-    <div class="home-slider relative owl-carousel js-fullheight h-100">
-      <div class="slider-item js-fullheight"  style="background-image:url(assets/images/image-4.jpg); border-radius: 0%; height: 100vh;">
+    <div class="home-slider relative owl-carousel js-fullheight h-100" >
+      <div class="slider-item js-fullheight"  style="background-image:url(assets/images/image-4.jpg); border-radius: 0%; ">
       	<div class="overlay"></div>
         <div class="container">
           <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
@@ -198,38 +233,51 @@
         </div>
       </div>
     </div><br>
-    <div class="container container-slide-effect" style="margin-bottom: -1rem;"   >
-      <div class="block-container "data-aos="zoom-out-up">
-        <span><ion-icon name="glasses-outline"></ion-icon></span>
-        <div class="d-block">
-          <p>Free 10</p>
-          <p>Return</p>
-        </div>
-      </div>
-      <div class="block-container"data-aos="zoom-out-up">
-        <span><ion-icon name="glasses-outline"></ion-icon></span>
-        <div class="d-block">
-          <p>Free 10</p>
-          <p>Return</p>
-        </div>
-      </div>
-      <div class="block-container" data-aos="zoom-out-up">
-        <span><ion-icon name="glasses-outline"></ion-icon></span>
-        <div class="">
-          <p>Free 10</p>
-          <p>Return</p>
-        </div>
-      </div>
-      <div class="block-container" data-aos="zoom-out-up">
-        <span><ion-icon name="glasses-outline"></ion-icon></span>
-        <div class="d-block">
-          <p>Free 10</p>
-          <p>Return</p>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </div>
+<section class="contact spad">
+  <div class="container">
+      <div class=" bottom_slide_banner">
+          <div class=" block_slide">
+              <div class="contact__widget"><br>
+                  <span class="icon_phone" style="color: #cb1a1a;"></span>
+                  <div>
+                    <span style="color: #000; font-size: 20px;">Livraison</span>
+                      <p  style="color: #616161; font-size: 14px;">Kinshasa livraison gratuite sur toutes les commandes de plus de 100$ en 24</p>
+                  </div>
+              </div>
+          </div>
+          <div class=" block_slide">
+            <div class="contact__widget"><br>
+                <span class="icon_phone" style="color: #cb1a1a;"></span>
+                <div>
+                  <span style="color: #000; font-size: 20px;">Garantie</span>
+                    <p  style="color: #616161; font-size: 14px;">Garantie de 7 jours sur les appareils High-Tech</p>
+                </div>
+            </div>
+        </div>
+        <div class=" block_slide">
+          <div class="contact__widget"><br>
+              <span class="icon_phone" style="color: #cb1a1a;"></span>
+              <div>
+                <span style="color: #000; font-size: 20px;">Support en ligne</span>
+                  <p  style="color: #616161; font-size: 14px;">Du Lundi au samedi,<br> 9h-16h30 <br> +243 895 463 426</p>
+              </div>
+          </div>
+      </div>
+      <div class=" block_slide">
+        <div class="contact__widget"><br>
+            <span class="icon_phone" style="color: #cb1a1a;"></span>
+            <div>
+              <span style="color: #000; font-size: 20px;">Paiement securié</span>
+                <p style="color: #616161; font-size: 14px;">Visa, Mastercard, Airtel Money, M-pesa, Orange Money</p>
+            </div>
+        </div>
+    </div>
+      </div>
+  </div>
+</section>
     <div class="product-container">
 
       <div class="container">
@@ -1223,7 +1271,7 @@
         <div class="">
             <div class="">
                 <div class="">
-                    <div class=" "><p class="text-center">
+                    <div class=" "><p class="">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tout droit reservé | <i class="fa fa-heart" aria-hidden="true"></i> pour akilishop
 </p></div>
                     <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
