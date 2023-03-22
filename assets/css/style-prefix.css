@@ -115,11 +115,76 @@ input::placeholder { font: inherit; }
 
 body { background: var(--white); }
 
-/**
- * scrollbar style
- */
+.owl-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.owl-carousel .owl-dots .owl-dot
+.owl-dots .owl-dot{
+  background-color: black;
+}
+.text h2, .text h1{
+  color: #fff;
+}
+.ftco-section{
+  margin-top: -8rem;
+}
+.slide-item{
+  border-radius: unset;
+}
+.text-slider .text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -5rem;
+}
+.home-slider{
+  border-radius: unset;
+}
+.h-100{
+  height: 100vh;
+}
+.container-slide-effect{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow-x: scroll;
+  text-align: center;
+  overflow-y: hidden;
+  margin-bottom: 3rem;
+  width: 1024px;
+}
+.container-slide-effect::-webkit-scrollbar {
+display: none;
+}
 
+.block-container{
+  padding: .5rem;
+  background-color: #eceaea;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.block-container p{
+  color: #000;
+}
+.block-container span{
+  display: block;
+  padding: 0 1rem;
+  font-size: 35px;
+  color: purple;
+}
+.block-container p{
+  margin: -.5rem 0;
+  text-align: left;
+}
 
 
 

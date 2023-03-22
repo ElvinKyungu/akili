@@ -178,7 +178,7 @@ ol {
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 13px 30px 12px;
-	background: #7fad39;
+	background: #222;
 	border: none;
 }
 
@@ -2614,7 +2614,7 @@ ol {
 -----------------------*/
 
 .footer {
-	background: #f9F9f9;
+	background: #222;
 	padding-top: 70px;
 	padding-bottom: 0;
 }
@@ -2625,7 +2625,7 @@ ol {
 
 .footer__about ul li {
 	font-size: 16px;
-	color: #1c1c1c;
+	color: #fff;
 	line-height: 36px;
 	list-style: none;
 }
@@ -2644,7 +2644,7 @@ ol {
 }
 
 .footer__widget h6 {
-	color: #1c1c1c;
+	color: #fff;
 	font-weight: 700;
 	margin-bottom: 10px;
 }
@@ -2659,14 +2659,14 @@ ol {
 }
 
 .footer__widget ul li a {
-	color: #1c1c1c;
+	color: #fff;
 	font-size: 14px;
 	line-height: 32px;
 }
 
 .footer__widget p {
 	font-size: 14px;
-	color: #1c1c1c;
+	color: #fff;
 	margin-bottom: 30px;
 }
 
@@ -2679,13 +2679,13 @@ ol {
 	width: 100%;
 	font-size: 16px;
 	padding-left: 20px;
-	color: #1c1c1c;
+	color: #fff;
 	height: 46px;
 	border: 1px solid #ededed;
 }
 
 .footer__widget form input::placeholder {
-	color: #1c1c1c;
+	color: #fff;
 }
 
 .footer__widget form button {
@@ -2701,12 +2701,12 @@ ol {
 	height: 41px;
 	width: 41px;
 	font-size: 16px;
-	color: #404040;
+	color: #fff;
 	border: 1px solid #ededed;
 	border-radius: 50%;
 	line-height: 38px;
 	text-align: center;
-	background: #ffffff;
+	background: #222;
 	-webkit-transition: all, 0.3s;
 	-moz-transition: all, 0.3s;
 	-ms-transition: all, 0.3s;
@@ -2734,7 +2734,7 @@ ol {
 
 .footer__copyright__text {
 	font-size: 14px;
-	color: #1c1c1c;
+	color: #fff;
 	float: left;
 	line-height: 25px;
 }
