@@ -172,6 +172,20 @@ display: none;
   align-items: center;
   margin-bottom: 3rem;
 }
+/* animation */
+.image-clignote  {
+  animation-duration: 5s;
+  animation-name: clignoter;
+  animation-iteration-count: infinite;
+  transition: none;
+}
+
+@keyframes clignoter {
+ 0%   { opacity:1; }
+ 40%   {opacity:0; }
+ 45% { opacity:1; }
+ 100% { opacity:1; }
+}
 .block-container p{
   color: #000;
 }
