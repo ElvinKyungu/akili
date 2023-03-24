@@ -3451,4 +3451,9 @@ ol {
 	.blog__details__hero__text h2 {
 		font-size: 24px;
 	}
+	.shoping__cart__table table tbody tr td.shoping__cart__item h5 {
+		color: #1c1c1c;
+		display: flex;
+		justify-content: center;
+	}
 }
