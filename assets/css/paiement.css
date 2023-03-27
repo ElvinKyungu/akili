@@ -2,17 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap");
 * {
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 .paiement-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  margin: 0;
-  background: white;
-  overflow-x: hidden;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -5rem;
 }
 
 #root {
@@ -163,6 +161,7 @@
   width: 100%;
   padding: 0.5rem 1rem;
   outline: none;
+  border: solid 1px #A9A9A9;
 }
 #form fieldset.card-number input, #form fieldset.card-holder input {
   border: solid 1px #A9A9A9;

@@ -1950,6 +1950,8 @@ ol {
 	color: #6f6f6f;
 	padding: 14px 30px 12px;
 	background: #f5f5f5;
+	border-radius: .2rem;
+	width: 100%;
 }
 
 .primary-btn.cart-btn span {
@@ -1992,6 +1994,7 @@ ol {
 	letter-spacing: 4px;
 	background: #000000;
 	border: 1px solid transparent;
+	border-radius: .2rem;
 }
 .shoping__discount form button:hover{
 	background: transparent;
@@ -2045,6 +2048,7 @@ ol {
 .shoping__checkout .primary-btn {
 	display: block;
 	text-align: center;
+	border-radius: .4rem;
 }
 
 /*---------------------
@@ -3418,10 +3422,12 @@ ol {
 	}
 	.shoping__cart__btns {
 		text-align: center;
+		width: 100%;
 	}
 	.primary-btn.cart-btn.cart-btn-right {
 		float: none;
 		margin-top: 10px;
+		
 	}
 	.shoping__checkout .primary-btn {
 		display: block;
