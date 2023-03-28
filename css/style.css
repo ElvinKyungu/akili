@@ -149,12 +149,12 @@ ol {
 .site-btn {
 	font-size: 14px;
 	color: #ffffff;
-	font-weight: 800;
-	text-transform: uppercase;
+	font-weight: 500;
 	display: inline-block;
 	padding: 13px 30px 12px;
 	background: #222;
 	border: none;
+	border-radius: .3rem;
 }
 
 /* Preloder */
@@ -2857,7 +2857,7 @@ ol {
 	color: #6f6f6f;
 	padding-left: 20px;
 	margin-bottom: 30px;
-	border: 1px solid #ebebeb;
+	border: 1px solid #c0bbbb;
 	border-radius: 4px;
 }
 
@@ -2872,7 +2872,7 @@ ol {
 	color: #6f6f6f;
 	padding-left: 20px;
 	margin-bottom: 24px;
-	border: 1px solid #ebebeb;
+	border: 1px solid #c0bbbb;
 	border-radius: 4px;
 	padding-top: 12px;
 	resize: none;

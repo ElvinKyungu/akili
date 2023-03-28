@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+:root {
+  --space-root: 1rem;
+  --space-xs: calc(var(--space-root) / 2);
+  --space-s: calc(var(--space-root) / 1.5);
+  --space-m: var(--space-root);
+  --space-l: calc(var(--space-root) * 1.5);
+  --space-xl: calc(var(--space-root) * 2);
+  --color-primary: mediumslateblue;
+  --color-secondary: black;
+  --color-tertiary: hotpink;
+  --base-border-radius: 0.25rem;
+  --ease: cubic-bezier(0.075, 0.82, 0.165, 1);
+  --duration: 350ms;
+  --font-family: "Roboto", sans-serif;
+  --font-size: 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contact-formulaire {
+    width: 100%;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  height: auto;
+  padding: var(--space-m);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-primary);
+}
+a:focus {
+  color: var(--color-secondary);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: calc(var(--font-size) * 1.5);
+}
+
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  transform: skewY(-5deg) translateY(10%) scale(0.94);
+  transition: box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+  background-color: white;
+  transform: skewY(0);
+  transform: scale(1.0001);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.form-inner {
+  padding: var(--space-xl);
+  background-color: white;
+  z-index: 1;
+}
+.form-inner > * + * {
+  margin-top: var(--space-xl);
+}
+
+.input-wrapper:focus-within label {
+  color: var(--color-secondary);
+}
+.input-wrapper:focus-within .icon {
+  background-color: var(--color-secondary);
+}
+.input-wrapper:focus-within input {
+  border-color: var(--color-secondary);
+}
+.input-wrapper + .input-wrapper {
+  margin-top: var(--space-l);
+}
+
+.input-group {
+  position: relative;
+}
+.input-group input {
+  border-radius: var(--base-border-radius);
+  padding-left:  70px !important;
+}
+.input-group .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-top-left-radius: var(--base-border-radius);
+  border-bottom-left-radius: var(--base-border-radius);
+  pointer-events: none;
+}
+
+label {
+  font-size: calc(var(--font-size) / 1.65);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.065rem;
+  display: block;
+  margin-bottom: var(--space-xs);
+  color: var(--color-primary);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  padding: var(--space-m);
+  background-color: var(--color-primary);
+}
+.icon svg {
+  width: 1.25em;
+  height: 1.25em;
+  fill: white;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: transform var(--duration) var(--ease);
+}
+
+input {
+  flex: 1 1 0;
+  width: 100%;
+  outline: none;
+  padding: var(--space-m);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+}
+input:focus {
+  color: var(--color-primary);
+}
