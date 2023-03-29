@@ -45,8 +45,6 @@ h6 {
 
 p {
 	font-size: 16px;
-	font-family: "Cairo", sans-serif;
-	color: #6f6f6f;
 	font-weight: 400;
 	line-height: 26px;
 	margin: 0 0 15px 0;
@@ -2745,7 +2743,7 @@ ol {
 
 .contact__widget span {
 	font-size: 36px;
-	color: #7fad39;
+	color: #222;
 }
 
 .contact__widget h4 {
