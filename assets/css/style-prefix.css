@@ -577,11 +577,12 @@ display: none;
 .header-search-container .search-field {
   font-size: var(--fs-7);
   color: var(--onyx);
-  padding: 10px 15px;
+  padding: 15px 15px;
   padding-right: 50px;
-  border: 1px solid var(--cultured);
+  border: 1px solid #b4b4b4;
   -webkit-border-radius: var(--border-radius-md);
           border-radius: var(--border-radius-md);
+          height: 100%;
 }
 
 .search-field::-webkit-search-cancel-button { display: none; }

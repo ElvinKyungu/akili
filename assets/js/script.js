@@ -3,7 +3,6 @@
 
 
 
-
 // mobile menu variables
 const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
 const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
