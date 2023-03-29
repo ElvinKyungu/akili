@@ -20,6 +20,17 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/style-prefix.css">
     <style>
+      .breadcrumb-section{
+      margin-top: -3.3rem !important;
+    }
+    .sidebar-category{
+      display: none;
+    }
+    @media screen and (max-width:768px){
+      .sidebar-category{
+        display: block;
+      }
+    }
       .nav-tabs{
               display: block;
               margin-top: -5rem;
@@ -27,14 +38,10 @@
             .nav-tabs li{
               margin-top: 1rem;
             }
-        @media (min-width: 768px) {
-            .sidebar {
-                display: none;
+            .topbanner{
+              margin-top: 1.5rem;
             }
-            .nav-tabs{
-              display: flex;
-            }
-        }
+
       </style>
 </head>
 
@@ -43,68 +50,203 @@
 
     <header>
 
-        <div class="header-top image-clignote" style="display: flex; position: relative; background-color: #000; padding-top: 1.5rem;">
-    
-          <div class="container">
-            <div class="header-alert-news flex ">
-              <p class="text-center" style="color: #fff;">
-                Profitez -15% EXTRA* sur les pièces de mi saison déjà jusqu'à -50% avec le code doux
-              </p>
-              <button class="close-coupon">
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-            </div>
-          </div>
-    
-        </div><br>
-    
-        <div class="header-main">
-    
-          <div class="container">
-    
-            <a href="index.html" class="header-logo">
-              <img src="assets/images/logo-removebg-preview.png" alt="" width="100%" height="80vh" style="object-fit: cover;" srcset="">
-            </a>
-            <div class="header-user-actions">
-    
-              <button class="action-btn">
-                <ion-icon name="person-outline"></ion-icon>
-              </button>
-    
-              <a href="panier.html">
-                <button class="action-btn">
-                  <ion-icon name="bag-handle-outline"></ion-icon>
-                  <span class="count">0</span>
-                </button>
-              </a>
-    
-            </div>
-    
-          </div>
-    
-        </div>
-        <div class="mobile-bottom-navigation">
-    
-          <button class="action-btn" data-mobile-menu-open-btn>
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-    
-          <a href="panier.html">
-            <button class="action-btn">
-              <ion-icon name="bag-handle-outline"></ion-icon>
-              <span class="count">0</span>
-            </button>
+      <div class="header-main">
+  
+       <div class="topbanner" style="background-color: #f4f4f4; margin-top: -1.5rem;">
+        <div class="container">
+  
+          <a href="index.html" class="header-logo">
+            <img src="assets/images/logo-removebg-preview.png" alt="" width="100%" height="120px" style="object-fit: cover;" srcset="">
           </a>
-          <a href="profile.html">
+  
+          <div class="header-search-container">
+  
+            <input type="search" name="search" class="search-field" placeholder="Entrer le nom du produit...">
+  
+            <button class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+  
+          </div>
+  
+          <div class="header-user-actions">
+  
             <button class="action-btn">
               <ion-icon name="person-outline"></ion-icon>
             </button>
-          </a>
+  
+            <a href="panier.html">
+              <button class="action-btn">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <span class="count">0</span>
+              </button>
+            </a>
+  
+          </div>
+  
         </div>
-    
-      </header>
-      <div class="product-container">
+       </div>
+  
+      </div>
+      <div class="mobile-bottom-navigation">
+  
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+  
+        <a href="panier.html">
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+        </a>
+        <a href="profile.html">
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+        </a>
+      </div>
+  
+    </header>
+  
+      <section class="breadcrumb-section set-bg" style="background-color: #f4f4f4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text"><br>
+                        <h2 style="font-size: 25px;">Nom du produit</h2><br>
+                        <div class="breadcrumb__option">
+                            <a href="./index.html">Accueil </a>
+                            <a href="./index.html">Lunette </a>
+                            <a href="./index.html">Homme </a>
+                            <span style="color: black;">Nom produit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__pic">
+                        <div class="product__details__pic__item">
+                            <img class="product__details__pic__item--large"
+                                src="assets/images/products/watch-3.jpg"  alt="">
+                        </div>
+                        <div class="product__details__pic__slider owl-carousel">
+                            <img data-imgbigurl="assets/images/products/watch-1.jpg"
+                                src="assets/images/products/watch-1.jpg" alt="">
+                            <img data-imgbigurl="assets/images/products/watch-2.jpg"
+                                src="assets/images/products/watch-2.jpg" alt="">
+                            <img data-imgbigurl="assets/images/products/watch-3.jpg"
+                                src="assets/images/products/watch-3.jpg" alt="">
+                            <img data-imgbigurl="assets/images/products/watch-4.jpg"
+                                src="assets/images/products/watch-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="product__details__text">
+                        <h3>Montre connectée</h3>
+                        <div class="product__details__rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <span>(18 reviews)</span>
+                        </div>
+                        <div class="product__details__price">$50.00</div>
+                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
+                            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
+                            quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
+                        <div class="product__details__quantity">
+                            <div class="quantity">
+                                <div class="pro-qty" style="display: flex; align-items: center;">
+                                    <input type="text" value="1">
+                                </div>
+                            </div>
+                        </div><br><br>
+                        <a href="#" class="primary-btn">Ajouter au panier</a>
+                        <ul>
+                            <li><b>Disponibilité</b> <span>en Stock</span></li>
+                            <li><b>Livraison</b> <span>1 jour de livraison. <samp>gratuite</samp></span></li>
+                            <li><b>Poids</b> <span>0.5 kg</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="product__details__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                                    aria-selected="true">Description</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                                    aria-selected="false">Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                                    aria-selected="false">Avis <span>(1)</span></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>Description</h6>
+                                    <p>
+                                        Petite description sur les produits
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>Information complémentaire</h6>
+                                    <p>
+                                        petite information sur les produits
+                                    </p>
+                                    <select name="" id="">
+                                      <option value="">Noir</option>
+                                      <option value="">Bleu</option>
+                                      <option value="">Rouge</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <div class="product__details__tab__desc">
+                                    <h6>Avis sur les produits</h6>
+                                    <p>
+                                        veuillez donner un avis sur les produits
+                                    </p>
+                                    <div class="d-flex" style="align-items: center; gap: 2rem;">
+                                        <h4>Elvin Kyungu</h4>
+                                        <div class="product__details__rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half-o"></i>
+                                            <span>(18 reviews)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <main>
 
+    <div class="product-container">
+  
         <div class="container">
   
   
@@ -283,99 +425,97 @@
   
               <h3 class="showcase-heading">Meilleur vente</h3>
   
-              <div class="showcase-wrapper" style="display: block;">
+              <div class="showcase-wrapper">
   
-                <div class="showcase-container" style="display: block;">
+                <div class="showcase-container d-block" style="display: block !important;">
   
-                 <div class="d-block">
-                    <div class="showcase">
+                  <div class="showcase">
   
-                        <a href="#" class="showcase-img-box">
-                          <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
-                            class="showcase-img">
-                        </a>
-      
-                        <div class="showcase-content">
-      
-                          <a href="#">
-                            <h4 class="showcase-title">chaussures bébé en tissu</h4>
-                          </a>
-      
-                          <div class="showcase-rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                          </div>
-      
-                          <div class="price-box">
-                            <del>$5.00</del>
-                            <p class="price">$4.00</p>
-                          </div>
-      
-                        </div>
-      
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                        class="showcase-img">
+                    </a>
+  
+                    <div class="showcase-content">
+  
+                      <a href="#">
+                        <h4 class="showcase-title">chaussures bébé en tissu</h4>
+                      </a>
+  
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
                       </div>
-      
-                      <div class="showcase">
-      
-                        <a href="#" class="showcase-img-box">
-                          <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
-                            width="75" height="75">
-                        </a>
-      
-                        <div class="showcase-content">
-      
-                          <a href="#">
-                            <h4 class="showcase-title">t-shirt à capuche pour hommes</h4>
-                          </a>
-                          <div class="showcase-rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half-outline"></ion-icon>
-                          </div>
-      
-                          <div class="price-box">
-                            <del>$17.00</del>
-                            <p class="price">$7.00</p>
-                          </div>
-      
-                        </div>
-      
+  
+                      <div class="price-box">
+                        <del>$5.00</del>
+                        <p class="price">$4.00</p>
                       </div>
-      
-                      <div class="showcase">
-      
-                        <a href="#" class="showcase-img-box">
-                          <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
-                            height="75">
-                        </a>
-      
-                        <div class="showcase-content">
-      
-                          <a href="#">
-                            <h4 class="showcase-title">t-shirt pour femme</h4>
-                          </a>
-                          <div class="showcase-rating">
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star"></ion-icon>
-                            <ion-icon name="star-half-outline"></ion-icon>
-                          </div>
-      
-                          <div class="price-box">
-                            <del>$5.00</del>
-                            <p class="price">$3.00</p>
-                          </div>
-      
-                        </div>
-      
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                        width="75" height="75">
+                    </a>
+  
+                    <div class="showcase-content">
+  
+                      <a href="#">
+                        <h4 class="showcase-title">t-shirt à capuche pour hommes</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
                       </div>
-                 </div>
+  
+                      <div class="price-box">
+                        <del>$17.00</del>
+                        <p class="price">$7.00</p>
+                      </div>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase">
+  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                        height="75">
+                    </a>
+  
+                    <div class="showcase-content">
+  
+                      <a href="#">
+                        <h4 class="showcase-title">t-shirt pour femme</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+  
+                      <div class="price-box">
+                        <del>$5.00</del>
+                        <p class="price">$3.00</p>
+                      </div>
+  
+                    </div>
+  
+                  </div>
   
                 </div>
   
@@ -384,344 +524,203 @@
             </div>
   
           </div>
-        </div>
+          <div class="product-box">
+            
+            <div class="product-main">
   
-      </div>
-      <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Nom du produit</h2>
-                        <div class="breadcrumb__option">
-                            <a href="./index.html">Accueil </a>
-                            <a href="./index.html">Lunette </a>
-                            <a href="./index.html">Homme </a>
-                            <span>Lunette soleil </span>
-                        </div>
+              <h2 class="title">Produit similaires</h2>
+  
+              <div class="product-grid">
+  
+                <div class="showcase">
+  
+                  <div class="showcase-banner">
+                    <div class="opacity_card"></div>
+                    <div class="">
+                      <img src="./assets/images/products/lunette10.jpeg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                      <img src="./assets/images/products/lunette10.jpeg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+  
                     </div>
+                    <p class="showcase-badge">15%</p>
+  
+                    <div class="showcase-actions">
+  
+                     
+  
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+  
+                      
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class="showcase-content">
+  
+                    <a href="#" class="showcase-category">jacket</a>
+  
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+  
+                    <div class="price-box">
+                      <p class="price">$48.00</p>
+                      <del>$75.00</del>
+                    </div>
+  
+                  </div>
+  
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Product Details Section Begin -->
-    <section class="product-details spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="product__details__pic">
-                        <div class="product__details__pic__item">
-                            <img class="product__details__pic__item--large"
-                                src="assets/images/products/watch-3.jpg" alt="">
-                        </div>
-                        <div class="product__details__pic__slider owl-carousel">
-                            <img data-imgbigurl="assets/images/products/watch-1.jpg"
-                                src="assets/images/products/watch-1.jpg" alt="">
-                            <img data-imgbigurl="assets/images/products/watch-2.jpg"
-                                src="assets/images/products/watch-2.jpg" alt="">
-                            <img data-imgbigurl="assets/images/products/watch-3.jpg"
-                                src="assets/images/products/watch-3.jpg" alt="">
-                            <img data-imgbigurl="assets/images/products/watch-4.jpg"
-                                src="assets/images/products/watch-4.jpg" alt="">
-                        </div>
+  
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/lunette11.jpeg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                      width="300">
+                    <img src="./assets/images/products/lunette11.jpeg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                      width="300">
+                
+                    <p class="showcase-badge angle black">Nouveau</p>
+                
+                    <div class="showcase-actions">
+                     
+                
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                
+                                    
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
                     </div>
+                  </div>
+                
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Lunette</a>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">$45.00</p>
+                      <del>$56.00</del>
+                    </div>
+                
+                  </div>
+                
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="product__details__text">
-                        <h3>Montre connectée</h3>
-                        <div class="product__details__rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-half-o"></i>
-                            <span>(18 reviews)</span>
-                        </div>
-                        <div class="product__details__price">$50.00</div>
-                        <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
-                            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
-                            quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
-                        <div class="product__details__quantity">
-                            <div class="quantity">
-                                <div class="pro-qty" style="display: flex; align-items: center;">
-                                    <input type="text" value="1">
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="primary-btn">Ajouter au panier</a>
-                        <ul>
-                            <li><b>Disponibilité</b> <span>en Stock</span></li>
-                            <li><b>Livraison</b> <span>1 jour de livraison. <samp>gratuite</samp></span></li>
-                            <li><b>Poids</b> <span>0.5 kg</span></li>
-                        </ul>
+  
+                <div class="showcase">
+                
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/lunette9.jpeg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img default"
+                      width="300">
+                    <img src="./assets/images/products/lunette9.jpeg" alt="MEN Yarn Fleece Full-Zip Jacket" class="product-img hover"
+                      width="300">
+                
+                    <div class="showcase-actions">
+                     
+                
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                
+                                    
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
                     </div>
+                  </div>
+                
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Lunette</a>
+                
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">$58.00</p>
+                      <del>$65.00</del>
+                    </div>
+                
+                  </div>
+                
                 </div>
-                <div class="col-lg-12">
-                    <div class="product__details__tab">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
-                                    aria-selected="true">Description</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
-                                    aria-selected="false">Information</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
-                                    aria-selected="false">Avis <span>(1)</span></a>
-                            </li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                <div class="product__details__tab__desc">
-                                    <h6>Description</h6>
-                                    <p>
-                                        Petite description sur les produits
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                <div class="product__details__tab__desc">
-                                    <h6>Information complémentaire</h6>
-                                    <p>
-                                        petite information sur les produits
-                                    </p>
-                                    <select name="" id="">
-                                      <option value="">Noir</option>
-                                      <option value="">Bleu</option>
-                                      <option value="">Rouge</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                <div class="product__details__tab__desc">
-                                    <h6>Avis sur les produits</h6>
-                                    <p>
-                                        veuillez donner un avis sur les produits
-                                    </p>
-                                    <div class="d-flex" style="align-items: center; gap: 2rem;">
-                                        <h4>Elvin Kyungu</h4>
-                                        <div class="product__details__rating">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star-half-o"></i>
-                                            <span>(18 reviews)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+  
+                <div class="showcase" >
+                
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/lunette8.jpeg" alt="Black Floral Wrap Midi Skirt" class="product-img default"
+                      width="300">
+                    <img src="./assets/images/products/lunette8.jpeg" alt="Black Floral Wrap Midi Skirt" class="product-img hover"
+                      width="300">
+                
+                    <p class="showcase-badge angle pink">Nouveau</p>
+                
+                    <div class="showcase-actions">
+                     
+                
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+                
+                                    
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
                     </div>
+                  </div>
+                
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Lunette</a>
+               
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                
+                    <div class="price-box">
+                      <p class="price">$25.00</p>
+                      <del>$35.00</del>
+                    </div>
+                
+                  </div>
+                
                 </div>
                 
-            </div>
-            
-        </div>
-    </section>
-    <section>
-      
-      <div class="container" style="margin-top: -4rem;">
-        <h2>Produits similaire</h2><br>
-        <div class="product-grid">
-          <div class="showcase">
-          
-            <div class="showcase-banner">
-              <img src="./assets/images/products/lunette1.jpeg" alt="Mens Winter Leathers Jackets" class="product-img default"
-                width="300">
-              <img src="./assets/images/products/lunette1.jpeg" alt="Mens Winter Leathers Jackets" class="product-img hover"
-                width="300">
-          
-              <div class="showcase-actions">
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          
-            <div class="showcase-content">
-              <a href="#" class="showcase-category">Lunette gold</a>
-          
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-          
-              <div class="price-box">
-                <p class="price">$32.00</p>
-                <del>$45.00</del>
-              </div>
-          
-            </div>
-          
-          </div>
   
-          <div class="showcase">
-          
-            <div class="showcase-banner">
-              <img src="./assets/images/products/lunette2.jpeg" alt="Montre en or" class="product-img default"
-                width="300">
-              <img src="./assets/images/products/lunette2.jpeg" alt="Trekking & Running Shoes - black" class="product-img hover"
-                width="300">
-          
-              <p class="showcase-badge angle black">Nouveau</p>
-          
-              <div class="showcase-actions">
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
               </div>
-            </div>
-          
-            <div class="showcase-content">
-              <a href="#" class="showcase-category">Lunette musicale</a>
-          
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-          
-              <div class="price-box">
-                <p class="price">$58.00</p>
-                <del>$64.00</del>
-              </div>
-            </div>
-          
-          </div>
   
-          <div class="showcase">
-          
-            <div class="showcase-banner">
-              <img src="./assets/images/products/lunette3.jpeg" alt="Men's Leather Formal Wear shoes" class="product-img default"
-                width="300">
-              <img src="./assets/images/products/lunette3.jpeg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
-                width="300">
-          
-              <div class="showcase-actions">
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
-              </div>
             </div>
-          
-            <div class="showcase-content">
-              <a href="#" class="showcase-category">Lunette</a>
-          
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-          
-              <div class="price-box">
-                <p class="price">$50.00</p>
-                <del>$65.00</del>
-              </div>
-          
-            </div>
-          
-          </div>
-  
-          <div class="showcase">
-          
-            <div class="showcase-banner">
-              <img src="./assets/images/products/lunette4.jpeg" alt="Better Basics French Terry Sweatshorts"
-                class="product-img default" width="300">
-              <img src="./assets/images/products/lunette4.jpeg" alt="Better Basics French Terry Sweatshorts"
-                class="product-img hover" width="300">
-          
-              <p class="showcase-badge angle black">Nouveau</p>
-          
-              <div class="showcase-actions">
-                <button class="btn-action">
-                  <ion-icon name="heart-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="repeat-outline"></ion-icon>
-                </button>
-          
-                <button class="btn-action">
-                  <ion-icon name="bag-add-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-          
-            <div class="showcase-content">
-              <a href="#" class="showcase-category">Lunette</a>
-          
-              <div class="showcase-rating">
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-                <ion-icon name="star-outline"></ion-icon>
-              </div>
-          
-              <div class="price-box">
-                <p class="price">$78.00</p>
-                <del>$85.00</del>
-              </div>
-          
-            </div>
-          
           </div>
   
         </div>
+  
       </div>
-    </section><br><br>
-    <!-- Product Details Section End -->
-
+    </main>
     <footer class="footer spad" >
       <div class="container">
           <div class="row">

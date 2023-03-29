@@ -137,6 +137,8 @@ ol {
 	background: #000;
 	letter-spacing: 2px;
 	border: 1px solid black;
+	border: 1px solid #000;
+	border-radius: .3rem;
 }
 .primary-btn:hover{
 	background: transparent;
@@ -1019,14 +1021,14 @@ ol {
 
 .breadcrumb__text h2 {
 	font-size: 46px;
-	color: #ffffff;
+	color: #222;
 	font-weight: 700;
 }
 
 .breadcrumb__option a {
 	display: inline-block;
 	font-size: 16px;
-	color: #ffffff;
+	color: #222;
 	font-weight: 700;
 	margin-right: 20px;
 	position: relative;
@@ -1641,7 +1643,7 @@ ol {
 }
 
 .product__details__pic__item img {
-	min-width: 100%;
+	width: 80%;
 }
 
 .product__details__pic__slider img {
@@ -1665,11 +1667,11 @@ ol {
 
 .product__details__text .product__details__rating i {
 	margin-right: -2px;
-	color: #EDBB0E;
+	color: #000;
 }
 
 .product__details__text .product__details__rating span {
-	color: #dd2222;
+	color: #000;
 	margin-left: 4px;
 }
 
@@ -1780,25 +1782,7 @@ ol {
 	position: relative;
 }
 
-.product__details__tab .nav-tabs:before {
-	position: absolute;
-	left: 0;
-	top: 12px;
-	height: 1px;
-	width: 370px;
-	background: #ebebeb;
-	content: "";
-}
 
-.product__details__tab .nav-tabs:after {
-	position: absolute;
-	right: 0;
-	top: 12px;
-	height: 1px;
-	width: 370px;
-	background: #ebebeb;
-	content: "";
-}
 
 .product__details__tab .nav-tabs li {
 	margin-bottom: 0;
@@ -3151,6 +3135,9 @@ ol {
 @media only screen and (max-width: 767px) {
 	.hero__categories {
 		margin-bottom: 30px;
+	}
+	.product__details__pic__item img {
+		width: 100%;
 	}
 	.hero__search {
 		margin-bottom: 30px;
